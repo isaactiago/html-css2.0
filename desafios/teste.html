@@ -1,13 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+        }
+        body{
+            background-color: rgb(40, 128, 243);
+        }
+
+        header{
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        main{
+            background-color: white;
+            width: 500px;
+            height: 250px;
+             margin: auto;
+            border-radius: 5px;
+            box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.212);
+        }
+
+        form p {
+            margin-bottom: 25px;
+            padding: 5px;
+        }
+
+        input{
+            width: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #enviar{
+            color: blue;
+            background-color:  rgb(40, 128, 243);
+            border: 1px solid blue;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>semememeem</h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis enim error unde dolorum voluptatibus atque, mollitia corporis vitae accusantium distinctio deleniti officiis quod commodi minus odit molestias hic eveniet. Id?</p>
-    
+   <header>
+    <h1>Cadastro</h1>
+   </header>
+
+   <main>
+    <form action="#" method="post">
+        <p> <label for="inome">Nome</label>
+            <input type="text" name="Nome" id="inome" required>
+        </p>
+
+        <p><label for="isobrenome">Sobrenome</label>
+            <input type="text" name="Sobrenome" id="isobrenome" required>
+        </p>
+
+        <p> <label for="iemail">email</label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p> <label for="isenha">Senha</label>
+            <input type="password" name="Senha" id="isenha" required minlength="5">
+        </p>
+        <p>
+            <input id="enviar" type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+
+
+
+   </main>
+
+  
+  
 </body>
 </html>
