@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* eSTILO PARA IMPRESSORA */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;  /* dispaly none significa : nao vai ser exibido */
+}
+
+article::after{ /* after: depois do artigo */
+    content: 'Esse artigo foi impreso atravez do site www.fedfefeqwrfwrfw.com';
+}
+
+article{
+    width: 100%;
+}
